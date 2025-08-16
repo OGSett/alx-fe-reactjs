@@ -39,7 +39,7 @@ const AddRecipeForm  = () => {
     };
 
     return ( 
-        <div className="bg-recipe-mid w-[90%] md:w-[60%] my-auto h-auto  flex flex-col items-center rounded">
+        <div className="bg-recipe-mid w-[90%] md:w-[60%] my-auto h-auto  flex flex-col items-center rounded shadow-md shadow-gray-400">
             <span className="font-playfair text-[30px] tracking-wide font-medium my-2">Add new recipe</span>
             <form onSubmit={handleSubmit} className="w-[90%]">
                 <div className="flex flex-col my-2">
@@ -54,7 +54,7 @@ const AddRecipeForm  = () => {
                     <span className="font-poppins text-[20px] my-2 tracking-[0.7px] ">Preparation steps :</span>
                     <textarea type="text" name="steps"value={formData.steps} className={`p-2 rounded-lg text-center  ${  errors.steps ? "border-2 border-red-500" : "border border-gray 300" }`} onChange={handleChange}  rows='5' cols='30' placeholder="Type here!" />
                 </div>
-                <button type="submit" className="p-4 text-white mt-4 rounded-md bg-recipe-dark mb-2">Add recipe</button>
+                <button type="submit" className="p-4 text-white mt-4 rounded-md bg-recipe-dark mb-2 md:hover:scale-105 transition duration-200">Add recipe</button>
             </form>
         </div>
      );
