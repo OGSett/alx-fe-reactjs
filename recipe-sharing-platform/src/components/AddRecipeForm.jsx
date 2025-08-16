@@ -19,21 +19,23 @@ const AddRecipeForm  = () => {
         setErrors((prev) => ({ ...prev, [e.target.name]: false }))
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-
-        let newErrors = {}
-        Object.keys(formData).forEach((key) => {
-        newErrors[key] = formData[key].trim() === ""
-        });
-
+    const validateForm = () => {
+        const newErrors = {
+            title: formData.title.trim() === "",
+            ingredients: formData.ingredients.trim() === "",
+            steps: formData.steps.trim() === "",
+        };
         setErrors(newErrors);
+        return !Object.values(newErrors).some(Boolean)
+    }
 
-        if (Object.values(newErrors).some((err) => err)) {
-        console.log("Validation failed ");
-        } else {
-        console.log("Form submitted ", formData)
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (!validateForm()) {
+            console.log("Validation failed");
+            return;
         }
+        console.log("Form submitted", formData);
     };
 
     return ( 
