@@ -22,7 +22,7 @@ const RecipeDetail  = () => {
                     <p>{recipe.ingredients}</p>
                 </div>
                 <div className="bg-recipe-mid rounded-none p-2 ">
-                    <span className="font-playfair tracking-[1px] lg:text-3xl text-[19px] font-semibold text-center md:min-h-[72px] my-2 md:my-0 lg:text-[30px] md:text-[20px] ">Description</span>
+                    <span className="font-playfair tracking-[1px] lg:text-3xl text-[19px] font-semibold text-center md:min-h-[72px] my-2 md:my-0 lg:text-[30px] md:text-[20px] ">cooking instructions</span>
                     <p>{recipe.description}</p>
                 </div>
             </div>
