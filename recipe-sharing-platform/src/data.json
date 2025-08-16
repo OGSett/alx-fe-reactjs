@@ -10,5 +10,11 @@
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
     "image": "https://www.thespicehouse.com/cdn/shop/articles/Chicken_Tikka_Masala_720x.jpg?v=1606845941"
+  },
+  {
+    "id": 3,
+    "title": "Beef Stroganoff",
+    "summary": "Tender strips of beef simmered in a creamy mushroom and onion sauce, traditionally served over egg noodles or rice.",
+    "image": "https://natashaskitchen.com/wp-content/uploads/2019/04/Beef-Stroganoff-6.jpg"
   }
 ]
