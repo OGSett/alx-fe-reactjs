@@ -3,14 +3,21 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './components/HomePage'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import RecipeDetail from './components/RecipeDetailPage'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <Home />
-    </>
+
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/recipe/:id' element={<RecipeDetail />} />
+        </Routes>
+      </Router>
+
   )
 }
 

@@ -1,20 +1,26 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://static01.nyt.com/images/2021/02/14/dining/carbonara-horizontal/carbonara-horizontal-master768-v2.jpg?quality=75&auto=webp"
+    "description": "Spaghetti Carbonara is a traditional Roman dish where hot pasta is tossed with a creamy sauce made from eggs, Pecorino Romano cheese, crispy pancetta, and freshly ground black pepper. The key is to use the heat of the pasta to cook the eggs into a silky sauce without scrambling them.",
+    "image": "https://static01.nyt.com/images/2021/02/14/dining/carbonara-horizontal/carbonara-horizontal-master768-v2.jpg?quality=75&auto=webp",
+    "ingredients":  "Spaghetti pasta, Eggs, Pecorino Romano cheese, Pancetta or guanciale, Black pepper, Salt"
   },
   {
-    "id": 2,
+    "id": "2",
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-    "image": "https://www.thespicehouse.com/cdn/shop/articles/Chicken_Tikka_Masala_720x.jpg?v=1606845941"
+    "description": "Chicken Tikka Masala is a globally loved dish with tender chicken pieces marinated in yogurt and spices, grilled until smoky, then simmered in a rich tomato and cream-based sauce. Flavored with garam masala, cumin, and coriander, it pairs perfectly with basmati rice or naan bread.",
+    "image": "https://www.thespicehouse.com/cdn/shop/articles/Chicken_Tikka_Masala_720x.jpg?v=1606845941",
+    "ingredients": "Chicken breast or thighs, Yogurt, Tomatoes (or tomato puree), Onions, Garlic, Ginger, Heavy cream or coconut cream, Butter, Garam masala, Cumin, Coriander, Turmeric, Chili powder, Salt"
   },
   {
-    "id": 3,
+    "id": "3",
     "title": "Beef Stroganoff",
     "summary": "Tender strips of beef simmered in a creamy mushroom and onion sauce.",
-    "image": "https://natashaskitchen.com/wp-content/uploads/2019/04/Beef-Stroganoff-6.jpg"
+    "description": "Beef Stroganoff is a hearty Russian-inspired dish made of sautéed beef strips, mushrooms, and onions, simmered in a rich sour cream sauce. Traditionally served over egg noodles or rice, it’s a comfort food classic that’s both creamy and savory.",
+    "image": "https://natashaskitchen.com/wp-content/uploads/2019/04/Beef-Stroganoff-6.jpg",
+    "ingredients": "Beef sirloin or tenderloin, Mushrooms, Onions, Garlic, Butter, Flour, Beef broth, Sour cream, Mustard (optional), Paprika, Salt, Black pepper"
   }
 ]
