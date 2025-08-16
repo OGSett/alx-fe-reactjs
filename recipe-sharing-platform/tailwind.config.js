@@ -10,6 +10,13 @@ export default {
         playfair: ['"Playfair Display"', 'serif'],
         poppins: ['Poppins', 'sans-serif'],
       },
+      colors: {
+        recipe: {
+          light: '#E8F5EC',
+          mid: '#7ACB8A',
+          dark: '#1F7A3F',
+        }
+      }
     },
   },
   plugins: [],
