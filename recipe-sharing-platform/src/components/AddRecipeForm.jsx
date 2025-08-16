@@ -19,7 +19,7 @@ const AddRecipeForm  = () => {
         setErrors((prev) => ({ ...prev, [e.target.name]: false }))
     };
 
-    const validate = (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault()
 
         let newErrors = {}
@@ -39,7 +39,7 @@ const AddRecipeForm  = () => {
     return ( 
         <div className="bg-recipe-mid w-[90%] md:w-[60%] my-auto h-auto  flex flex-col items-center rounded">
             <span className="font-playfair text-[30px] tracking-wide font-medium my-2">Add new recipe</span>
-            <form onSubmit={validate} className="w-[90%]">
+            <form onSubmit={handleSubmit} className="w-[90%]">
                 <div className="flex flex-col my-2">
                     <span className="font-poppins text-[20px] my-2 tracking-[0.7px] ">Title :</span>
                     <input type="text" name="title"value={formData.title} className={`p-2 rounded-lg text-center w-full ${  errors.title ? "border-2 border-red-500" : "border border-gray 300" }`} onChange={handleChange} placeholder="Type here!" />
