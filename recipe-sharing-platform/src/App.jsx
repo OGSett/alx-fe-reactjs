@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './components/HomePage'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import RecipeDetail from './components/RecipeDetailPage'
+import RecipeDetail from './components/RecipeDetail'
 
 function App() {
   const [count, setCount] = useState(0)
