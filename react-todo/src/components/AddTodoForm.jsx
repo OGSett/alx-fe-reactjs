@@ -12,11 +12,10 @@ export default function AddTodoForm({ addTodo }) {
   return (
     <form onSubmit={handleSubmit}>
       <input
+        data-testid="todo-input"
         type="text"
-        placeholder="Add a new todo"
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        data-testid="todo-input"
       />
       <button type="submit">Add</button>
     </form>
