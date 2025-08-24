@@ -18,6 +18,8 @@ export default function PostsComponent() {
     queryKey: ["posts"],
     queryFn: fetchPosts,
     staleTime: 5000,
+    cacheTime: 1000 * 60,
+    keepPreviousData: true,
     refetchOnWindowFocus: false,
     });
 
