@@ -6,7 +6,7 @@ const demoPosts = [
   { id: 3, title: "Routing Deep Dive" },
 ];
 
-export default function Blog() {
+export default function BlogPost() {
   return (
     <main style={{ padding: 16 }}>
       <h1>Blog</h1>
