@@ -11,7 +11,7 @@ const RegistrationForm = () => {
     const submit = (e) => {
         e.preventDefault()
         setLoading(true)    
-        if(!userName || !email || !password) {
+        if(!username || !email || !password) {
             setLoading(false)
             setError('Error accured during registration')
         } else {
