@@ -3,29 +3,29 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
 const RegistrationSchema = Yup.object({
-  userName: Yup.string()
-    .trim()
-    .required("Username is required")
-    .min(2, "Username must be at least 2 characters"),
+  username: Yup.string()
+  .required("Username is required")
+  .trim()
+  .min(2, "Username must be at least 2 characters"),
   email: Yup.string()
-    .trim()
-    .email("Invalid email address")
-    .required("Email is required"),
+  .required("Email is required")
+  .trim()
+  .email("Invalid email address"),
   password: Yup.string()
-    .trim()
-    .required("Password is required")
-    .min(6, "Password must be at least 6 characters"),
+  .required("Password is required")
+  .trim()
+  .min(6, "Password must be at least 6 characters"),
 });
 
 export default function FormikForm() {
   return (
     <Formik
-      initialValues={{ userName: "", email: "", password: "" }}
+      initialValues={{ username: "", email: "", password: "" }}
       validationSchema={RegistrationSchema}
       onSubmit={async (values, { setSubmitting, resetForm }) => {
         try {
           const payload = {
-            userName: values.userName.trim(),
+            username: values.username.trim(),
             email: values.email.trim().toLowerCase(),
             password: values.password.trim(),
           };
@@ -33,7 +33,7 @@ export default function FormikForm() {
           await new Promise((r) => setTimeout(r, 700));
 
           console.log("Registration payload (password omitted):", {
-            userName: payload.userName,
+            username: payload.username,
             email: payload.email,
           });
 
@@ -49,15 +49,15 @@ export default function FormikForm() {
       {({ isSubmitting }) => (
         <Form noValidate>
           <div>
-            <label htmlFor="userName">Username :</label>
+            <label htmlFor="username">Username :</label>
             <Field
-              id="userName"
-              name="userName"
+              id="username"
+              name="username"
               type="text"
               autoComplete="username"
             />
             <ErrorMessage
-              name="userName"
+              name="username"
               component="div"
               role="alert"
               className="text-red-500 text-sm"
