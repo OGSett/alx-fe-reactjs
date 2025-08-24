@@ -6,7 +6,7 @@ import BlogPost from "./components/Post.jsx";
 import Profile from "./components/Profile.jsx";
 import Login from "./components/Login.jsx";
 import NotFound from "./components/NotFound.jsx";
-import ProtectedRoute from "./routes/ProtectedRoute.jsx";
+import ProtectedRoute from "./components/ProtectedRoute.jsx";
 
 export default function App() {
   return (
